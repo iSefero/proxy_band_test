@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/proxy_band_test/static/css/main.cc93b6d2.css",
+    "main.js": "/proxy_band_test/static/js/main.099fb33c.js",
+    "index.html": "/proxy_band_test/index.html",
+    "main.cc93b6d2.css.map": "/proxy_band_test/static/css/main.cc93b6d2.css.map",
+    "main.099fb33c.js.map": "/proxy_band_test/static/js/main.099fb33c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc93b6d2.css",
+    "static/js/main.099fb33c.js"
+  ]
+}
