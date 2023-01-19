@@ -1,9 +1,13 @@
-import {useDispatch} from "react-redux";
+// React
 import React from "react";
+
+// Redux
+import {useDispatch} from "react-redux";
 import {setAlbums, setPosts, setUsers} from "../redux/slices/usersInfoSlice";
 
-export function dataRequest()  {
-  const dispatch = useDispatch()
+
+export function DataRequest()  {
+  const dispatch = useDispatch();
 
   React.useEffect(() => {
     async function fetchData() {
@@ -25,9 +29,5 @@ export function dataRequest()  {
     }
     fetchData().then(r => r)
   },[])
-
-  return (
-    <div></div>
-  )
 
 }

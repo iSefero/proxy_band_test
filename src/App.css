@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+/* Specify box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Removing internal indentations*/
+ul[class],
+ol[class] {
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Removing the outside indentation */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+/* Set the basic default settings for body */
+body {
   min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove the standard styling for all ul and il that have the class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Items a that don't have a class are reset to default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Simplifying the image workflow */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Specify an understandable periodicity in the data flow*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for intuitions and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people who would rather not use them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.App {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 100%;
+  background-color: lightgray;
+  min-height: 100vh;
+  height: 100%;
 }

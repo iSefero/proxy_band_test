@@ -1,0 +1,6 @@
+.postsContainer {
+    padding: 50px 0;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}

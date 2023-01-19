@@ -1,16 +1,15 @@
-import {useSelector} from "react-redux";
+// Common
+import "./userPageStyle.css"
+import {User} from "../../components/user/User";
 
 
 export const UsersPage = () => {
-  const { users } = useSelector(state => state.user)
-  console.log(users, "+++")
-
-  const renderUsers = () => users.map(item => (<div>item.name</div>))
 
   return (
-    <div>
-      <div>sad</div>
-      <div>render</div>
+    <div className="userContainer">
+      <div className="userContent">
+        <User/>
+      </div>
     </div>
   )
 };

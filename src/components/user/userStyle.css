@@ -1,0 +1,51 @@
+.userWrapper {
+    display: flex;
+    background-color: rgba(241, 224, 190, 0.55);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    justify-content: space-between;
+    min-width: 450px;
+}
+
+.nameBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nameItem {
+    padding-left: 10px;
+}
+
+.buttonBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    background-color: #888484;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.button:hover {
+    box-shadow: 0 0 3px #380707;
+    transition: 0.4s;
+
+}
